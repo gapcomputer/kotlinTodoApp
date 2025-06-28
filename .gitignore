@@ -1,0 +1,40 @@
+# Android Studio
+*.iml
+.gradle/
+build/
+local.properties
+.idea/
+
+# Kotlin and Android specific
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependency directories
+/node_modules
+/captures
+/app/build
+
+# Environment and local configuration
+.env
+*.keystore
