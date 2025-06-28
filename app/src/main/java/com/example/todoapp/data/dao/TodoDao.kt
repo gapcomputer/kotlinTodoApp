@@ -10,6 +10,23 @@ import com.example.todoapp.data.entity.TodoItem
 @Dao
 interface TodoDao {
     /**
+     * Inserts a new todo item into the database
+     * 
+     * @param todoItem The todo item to be inserted
+     * @return The ID of the inserted item
+     */
+    @Insert
+    suspend fun insert(todoItem: TodoItem): Long
+
+    /**
+     * Retrieves all todo items from the database
+     * 
+     * @return A list of all todo items
+     */
+    @Query("SELECT * FROM todo_items")
+    suspend fun getAllTodos(): List<TodoItem>
+
+    /**
      * Deletes a specific todo item from the database by its ID
      * 
      * @param id The unique identifier of the todo item to be deleted
