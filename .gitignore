@@ -1,0 +1,31 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Kotlin/Android specific
+bin/
+gen/
+out/
+
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# Kotlin build output
+build/
+.kotlin/
+
+# VS Code settings
+.vscode/
+
+# Gradle files
+.gradle/
